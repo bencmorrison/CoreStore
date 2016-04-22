@@ -286,7 +286,7 @@ public final class DataStack {
     
     internal let coordinator: NSPersistentStoreCoordinator
     internal let rootSavingContext: NSManagedObjectContext
-    internal let mainContext: NSManagedObjectContext
+    public let mainContext: NSManagedObjectContext
     internal let model: NSManagedObjectModel
     internal let migrationChain: MigrationChain
     internal let childTransactionQueue: GCDQueue = .createSerial("com.coreStore.dataStack.childTransactionQueue")
